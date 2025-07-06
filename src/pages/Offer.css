@@ -1,0 +1,41 @@
+.offer-page {
+  max-width: 700px;
+}
+
+.offer-panel {
+  background: #ffffff;
+  border-left: 6px solid #0d6efd;
+  border-radius: 20px;
+}
+
+.offer-convo-form {
+  font-size: 1rem;
+}
+
+.offer-block {
+  padding: 0.5rem 0;
+}
+
+.offer-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+  color: #333;
+}
+
+.offer-input {
+  border: 2px solid #d9e2ec;
+  border-radius: 10px;
+  padding: 12px;
+  background-color: #f8fafc;
+  transition: 0.3s;
+}
+
+.offer-input:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.2);
+}
+
+.offer-panel h2 {
+  font-family: 'Georgia', serif;
+}

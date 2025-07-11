@@ -37,7 +37,7 @@ const Navbar = () => {
               <Link className="nav-link nav-link-style" to="/seek">Seek a Skill</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link nav-link-style" to="/journey">My Journey</Link>
+              <Link className="nav-link nav-link-style" to="/my-journey">My Journey</Link>
             </li>
           </ul>
         </div>

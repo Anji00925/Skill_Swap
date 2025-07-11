@@ -1,8 +1,12 @@
 import './Home.css';
 import { Link } from 'react-router-dom';
 import { FaRocket, FaCompass } from 'react-icons/fa';
+import { FaHeart } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
+  const navigate = useNavigate();
+  // const totalConnects = 12;
   return (
     <div className="container my-5 px-3 home-page">
       {/* Header */}
@@ -10,6 +14,14 @@ const Home = () => {
         <h1 className="fw-bold text-primary">Welcome to SkillSwap</h1>
         <p className="lead text-muted">Learn. Teach. Connect — all for free!</p>
       </div>
+      <button
+        className="total-connects-btn"
+        onClick={() => navigate('/connections')}
+      >
+        <FaHeart color="#dc3545" />
+        Connections
+        {/* Total Connects: <strong>{totalConnects}</strong> */}
+      </button>
 
       {/* CTA Buttons */}
       <div className="d-flex flex-column flex-md-row justify-content-center gap-3 mb-5">

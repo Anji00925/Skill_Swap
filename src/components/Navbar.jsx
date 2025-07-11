@@ -2,6 +2,8 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import './Navbar.css';
 import logo from '../assets/logo.jpeg';
+// OPTIONAL: import a profile icon image
+// import profileIcon from '../assets/profile-icon.png';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -40,8 +42,15 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* Right: Logout */}
-        <div className={`d-lg-block ${isOpen ? 'w-100 text-center mt-2' : ''}`}>
+        {/* Right: Profile + Logout */}
+        <div className={`d-flex align-items-center gap-3 ${isOpen ? 'w-100 justify-content-center mt-2' : ''}`}>
+          {/* Profile Icon Link */}
+          <Link to="/profile" className="nav-link nav-link-style profile-icon-link text-white">
+            {/* Replace 👤 with <img src={profileIcon} alt="Profile" className="profile-icon" /> if you have an icon */}
+            👤
+          </Link>
+
+          {/* Logout Button */}
           <button className="btn btn-outline-light logout-btn">Logout</button>
         </div>
       </div>
